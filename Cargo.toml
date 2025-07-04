@@ -1,0 +1,17 @@
+[package]
+description = "CLI tool for managing git user profiles"
+edition = "2024"
+license = "GPL-3.0-or-later"
+name = "git-user"
+version = "1.0.0"
+
+[package.metadata]
+authors = ["PotatoMaster101"]
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"] }
+gix = { version = "0.73", default-features = false, features = ["basic"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+shellexpand = "3.1"
+thiserror = "2.0"
